@@ -208,6 +208,10 @@ h4 {
   font-weight: 500;
 }
 
+h5{
+  display: none;
+}
+
 .header__img {
   width: 110%;
   grid-column: 2 / 3;
@@ -664,4 +668,165 @@ h4 {
   color: rgb(255, 255, 255);
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+/*------------------------------------------------------- Phone responsive ------------------------------------------------------*/ 
+
+@media only screen and (max-width: 480px)
+{
+  h1 {
+    font-size: 6rem;
+    line-height: 1.35;
+    margin-top: -6cm;
+  }
+  
+  h4 {
+    display: none;
+  }
+
+  h5{
+    display: grid;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 3.5cm;
+    margin-left: -7cm;
+  }
+  
+  .header__img {
+    display: none;
+  }
+
+  .btn--text {
+    font-size: 2rem;
+    margin-top: 1cm;
+  }
+  
+  .nav {
+    height: 10rem;
+    width: 100%;
+    padding: 1rem;
+    z-index: 100;
+    margin-left: -2cm;
+  }
+
+  .nav__logo {
+    height: 3rem;
+  }
+  
+  .nav__links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .nav__item {
+    margin-left: 1rem;
+  }
+  
+  .nav__link:link,
+  .nav__link:visited {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s;
+  }
+  
+  .nav__link--btn:link,
+  .nav__link--btn:visited {
+    padding: 0.2rem 0.5rem;
+    border-radius: 2rem;
+  }
+
+  .section__header {
+    font-size: 3rem;
+    line-height: 1.3;
+    font-weight: 500;
+  }
+
+  .operations__tab-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .operations__tab {
+    margin-right: 0.5rem;
+    transform: translateY(-50%);
+  }
+
+  .btn {
+  display: inline-block;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 500;
+  border: none;
+  padding: 1rem 4.5rem;
+  border-radius: 10rem;
+  transition: all 0.3s;
+}
+
+.operations__header {
+  display: none;
+}
+
+.operations__icon {
+  display: none;
+}
+
+.operations__content p {
+  font-size: 1em;
+  margin-left: -3cm;
+}
+
+
+.testimonial__header {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  margin-left: 0.5cm;
+}
+
+.testimonial__photo {
+  grid-row: 1 / span 2;
+  width: 3rem;
+  border-radius: 50%;
+  margin-top: 2cm;
+}
+
+.testimonial__name {
+  font-size: 1.7rem;
+  font-weight: 500;
+  align-self: end;
+  margin-bottom: -2cm;
+}
+
+.testimonial__location {
+  font-size: 1rem;
+  align-self: end;
+  margin-bottom: 0.5cm;
+}
+
+
+.testimonial__text {
+  font-size: 1.7rem;
+  bottom: -2cm;
+}
+
+.dots {
+  position: absolute;
+  bottom: 0.5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section__title--testimonials {
+  margin-bottom: 2rem;
+  margin-top: -2cm;
+}
+
+.footer__nav {
+display: none;
+}
+
 }
