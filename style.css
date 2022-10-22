@@ -709,6 +709,12 @@ h5{
     margin-left: -2cm;
   }
 
+  .nav.sticky {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.95);
+    margin-left: -1cm;
+  }
+
   .nav__logo {
     height: 3rem;
   }
