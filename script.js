@@ -5,7 +5,11 @@
 const btnCloseModal = document.querySelector('.btn--close-modal');
 const btnsOpenModal = document.querySelectorAll('.btn--show-modal'); //querySelectorAll because we have two buttons returning same thing
 const btnScrollTo = document.querySelector(".btn--scroll-to");
+const btnNextStep = document.querySelector(".nextStep");
 
+const fName = document.querySelector("#fName");
+const lName = document.querySelector("#lName");
+const email = document.querySelector("#email");
 const section1 = document.querySelector("#section--1");
 const header = document.querySelector(".header");
 const modal = document.querySelector('.modal');
@@ -369,4 +373,21 @@ document.addEventListener("keydown", function(e)
   {
     slideToLeft();
   }
+})
+
+
+
+// FORMULARY CREATE ACCOUNT
+
+btnNextStep.addEventListener("click", function(e)
+{
+  e.preventDefault();
+
+  if(fName.value == "" || lName.value == "" || email.value == "")
+  {
+    return alert("⚠ You have to fill out the form ⚠")
+  }
+
+  window.location.href = "https://astonishing-belekoy-a5592a.netlify.app/";
+
 })
