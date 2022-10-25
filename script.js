@@ -389,5 +389,4 @@ btnNextStep.addEventListener("click", function(e)
   }
 
   window.location.href = "https://astonishing-belekoy-a5592a.netlify.app/";
-
 })
