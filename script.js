@@ -385,8 +385,15 @@ btnNextStep.addEventListener("click", function(e)
 
   if(fName.value == "" || lName.value == "" || email.value == "")
   {
-    return alert("⚠ You have to fill out the form ⚠")
-  }
+    btnNextStep.classList.add("error");
 
-  window.location.href = "https://astonishing-belekoy-a5592a.netlify.app/";
+    setTimeout(function()
+    {
+      btnNextStep.classList.remove("error");
+    }, 300)
+  }
+  else
+  {
+    window.location.href = "https://astonishing-belekoy-a5592a.netlify.app/";
+  }
 })

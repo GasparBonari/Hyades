@@ -670,6 +670,17 @@ h5{
   font-weight: 400;
 }
 
+.error {
+  position: relative;
+  animation: shake .1s linear;
+  animation-iteration-count: 3;
+}
+
+@keyframes shake {
+  0% {left: -5px;}
+  100% {right: -5px;}
+}
+
 /*------------------------------------------------------- Phone responsive ------------------------------------------------------*/ 
 
 @media only screen and (max-width: 480px)
