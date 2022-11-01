@@ -1,7 +1,5 @@
 'use strict';
 
-// Modal window
-
 const btnCloseModal = document.querySelector('.btn--close-modal');
 const btnsOpenModal = document.querySelectorAll('.btn--show-modal'); //querySelectorAll because we have two buttons returning same thing
 const btnScrollTo = document.querySelector(".btn--scroll-to");
