@@ -83,7 +83,7 @@ setTimeout(function()
 
 
 
-// lEARN MORE BUTTON
+// LEARN MORE BUTTON
 
 btnScrollTo.addEventListener("click", function()
 {
