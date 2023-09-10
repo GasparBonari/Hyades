@@ -238,19 +238,25 @@ h5{
 
 /* FEATURES */
 .features {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 4rem;
   margin: 0 12rem;
 }
 
+.feature-info{
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+
 .features__img {
-  width: 100%;
+  width: 50%;
 }
 
 .features__feature {
   align-self: center;
-  justify-self: center;
+  padding: 60px;
   width: 70%;
   font-size: 1.5rem;
 }
@@ -694,12 +700,8 @@ h5{
     display: none;
   }
 
-  h5{
-    display: grid;
-    font-size: 2rem;
-    font-weight: 500;
-    margin-top: 3.5cm;
-    margin-left: -7cm;
+  .header__title {
+    grid-template-columns: 1fr;
   }
   
   .header__img {
@@ -759,6 +761,32 @@ h5{
     font-size: 3rem;
     line-height: 1.3;
     font-weight: 500;
+  }
+
+  .features {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin: 0 0rem;
+  }
+  
+  .feature-info{
+    flex-direction: column;
+  }
+
+  .reverse{
+    flex-direction: column-reverse;
+  }
+  
+  .features__img {
+    width: 100%;
+  }
+  
+  .features__feature {
+    align-self: center;
+    padding: 0px;
+    width: 100%;
+    font-size: 1.5rem;
   }
 
   .operations__tab-container {
@@ -844,69 +872,6 @@ h5{
     display: none;
   }
 
-
-
-  .features__img {
-    display: none;
-  }
-
-  .f1{
-    margin-left: -2.5cm;
-    margin-top: -6cm;
-  }
-
-  .f1-p{
-    font-size: 2rem;
-    width: 10cm;
-    margin-left: -4.5cm;
-  }
-
-  .f1-i{
-    position: absolute;
-    top: 33.3cm;
-    left: 1.2cm;
-  }
-
-  .f2{
-    position: relative;
-    top: 4cm;
-    right: 6.5cm;
-    font-size: 2rem;
-  }
-
-  .f2-p{
-    position: relative;
-    font-size: 2rem;
-    width: 10cm;
-    top: 4cm;
-    right: 15.5cm;
-
-  }
-
-  .f2-i{
-    position: relative;
-    margin-left: -15.4cm;
-    top: 8.5cm;
-  }
-
-  .f3{
-    margin-left: -2.5cm;
-  }
-
-  .f3-p{
-    position: relative;
-    font-size: 2rem;
-    width: 10cm;
-    top: 0.2cm;
-    right: 4.5cm;
-  }
-
-  .f3-i{
-    position: relative;
-    margin-left: -4.4cm;
-    top: 4.7cm;
-  }
-
   .sf-h2{
     position: relative;
     top: -1.5cm;
@@ -916,5 +881,4 @@ h5{
     position: relative;
     top: -1.3cm;
   }
-
 }
