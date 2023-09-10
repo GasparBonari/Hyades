@@ -35,7 +35,7 @@ To get started with the Hyades Bank Website template, follow these steps:
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/hyades
+   git clone https://github.com/GasparBonari/hyades
 
 2. Navigate to the project directory:
    cd hyades-bank-website
